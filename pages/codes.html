@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/prism.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Mooli&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="line-numbers">
+    <header>
+      <div class="container">
+        <div class="title"><a href="../index.html">Library.</a></div>
+        <ul class="headers">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/codes.html">Codes</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+      </div>
+    </header>
+    <section class="hero">
+        <div class="header-title">
+            <h2 class="sample">If statements</h3>
+            <p class="sub-header">September 23, 2023</p>
+            <hr>
+        </div>
+        
+        <div class="code code1">
+            <h4>Code#1</h4>
+        <pre><code class="language-c">#include &lt;stdio.h&gt;
+
+int main() {
+    int input;
+    printf("What is the length of 1 side? \t");
+    scanf("%d", &input);
+    printf("The perimeter of your square is %d", input*4);
+    return 0;
+}</code></pre>
+        </div>
+        <div class="code code2">
+        <h4>Code#2</h4>
+        <pre><code class="language-c">#include &lt;stdio.h&gt;
+
+int main() {
+    int input;
+    
+    printf("What is the length of 1 side? \t");
+    scanf("%d", &input);
+    printf("The area of your square is %d", input*input);
+    return 0;
+}</code></pre>
+        </div>
+        <div class="code code3">
+        <h4>Code#3</h4>
+        <pre><code class="language-c">#include &lt;stdio.h&gt;
+
+int main() {
+    int a, b;
+    
+    printf("What is the length and width of your rectangle?\n");
+    printf("length:\t");
+    scanf("%d", &a);
+    printf("width:\t");
+    scanf("%d", &b);
+    printf("The perimeter of your rectangle is %d \n", (2*a)+(2*b));
+    printf("The area of your rectangle is %d", (2*a)*(2*b));
+    return 0;
+}</code></pre>
+        </div>
+        <div class="code code4">
+        <h4>Code#4</h4>
+        <pre><code class="language-c">#include &lt;stdio.h&gt;
+ 
+int main() {
+    int a, b, c;
+    
+    printf("What is the 3 sides of your triangle? \t");
+    scanf("%d", &a);
+    scanf("%d", &b);
+    scanf("%d", &c);
+    printf("The perimeter of your triangle is %d", a+b+c);
+    return 0;
+}</code></pre>
+        </div>
+        <div class="code code5">
+        <h4>Code#5</h4>
+        <pre><code class="language-c">#include &lt;stdio.h&gt;
+
+int main() {
+    const double pi = 3.14;
+    int a;
+    
+    printf("What is the radius of your circle? \t");
+    scanf("%d", &a);
+    printf("The circumference of your circle is %.2lf \n", (2*pi)*a);
+    printf("The area of your circle is %.2lf", (a*a)*pi);
+    return 0;
+}</code></pre>
+    </div>
+  
+    </section>
+
+    <script src="../js/prism.js"></script>
+  </body>
+</html>
