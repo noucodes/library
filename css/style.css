@@ -135,6 +135,11 @@ h1 {
 
 /* Schedule Section */
 
+.schedule {
+  width: 100%;
+  min-height: 100vh;
+}
+
 .content-table {
   border-collapse: collapse;
   font-size: 0.9em;
@@ -144,7 +149,6 @@ h1 {
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   background-color: #131313;
-  margin-top: 10%;
 }
 
 .content-table thead tr {
@@ -163,7 +167,7 @@ h1 {
 
 .content-table th,
 .content-table td {
-  padding: 12px 2px;
+  padding: 12px 0;
   text-align: center;
   font-size: 1em;
   color: white;
@@ -274,12 +278,35 @@ h4 {
   }
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .content-table {
-    width: 95%;
+    width: auto;
   }
-  input[type="text"],
-  textarea {
-    width: 75%;
+
+  .days {
+    width: 100%;
+  }
+
+  .card h3 {
+    font-size: 30px;
+  }
+  .subjects h5 {
+    font-size: 20px;
+  }
+
+  .subjects p {
+    font-size: 15px;
+  }
+
+  .days {
+    margin: 20px 0;
+  }
+
+  .time td,
+  .content-table td {
+    font-size: 7px;
+  }
+  .content-table td h2 {
+    font-size: 15px;
   }
 }
